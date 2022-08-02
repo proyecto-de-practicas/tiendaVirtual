@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <title>Document</title>
+    <style>
+        .opaci{
+            opacity: 0.7;
+        }
+        .opaci:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body style=" padding-top:56px;">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container ">
+            <a href="#" class="navbar-brand">Navbar</a>
+
+            <!-- Boton para el menu movil -->
+            <button 
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Mostrar / Ocultar Menu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu de navegacion -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a 
+                            href="#" 
+                            class="nav-link dropdown-toggle"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            id="dropdown-menu"
+                        >
+                            Categorias
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Elemento 1</a></li>
+                            <li><a href="#" class="dropdown-item">Elemento 2</a></li>
+                            <li><a href="#" class="dropdown-item">Elemento 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+                </ul>
+
+                <form action="" class="d-flex">
+                    <input type="search" class="form-control me-2" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-light" type="button">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>   
+
+  
+    <div class="container">
+
+       
+  <!------------carucel-------------->
+        <div class="row mt-5" >
+			<div class="col-12  " style="margin:0 auto">
+				<!--data-bs-touch="false" mo deja que muevan el carrucel con los dedos en celulares-->
+				<div class="carousel slide carousel-dark  " id="mi-carousel" data-bs-ride="carousel">
+					<div class="carousel-inner ">
+						<div class="carousel-item active w-100">
+							<img class="img-fluid w-100" src="img/s1.jpg" alt="">
+						</div>
+						<div class="carousel-item w-100" data-bs-interval="5000">
+							<div class="carousel-caption">
+								</div>
+							<img class="img-fluid w-100" src="img/s2.jpg" alt="">
+						</div>
+						<div class="carousel-item w-100">
+							<img class="img-fluid w-100" src="img/s3.jpg" alt="">
+						</div>
+					</div>
+
+					<!-- Controles -->
+					<button 
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#mi-carousel"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Anterior</span>
+					</button>
+
+					<button 
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#mi-carousel"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Siguiente</span>
+					</button>
+
+					<!-- Indicadores -->
+					<div class="carousel-indicators">
+						<button 
+							type="button"
+							class="active"
+							data-bs-target="#mi-carousel"
+							data-bs-slide-to="0"
+							aria-label="Slide 1"
+						></button>
+						<button 
+							type="button"
+							class=""
+							data-bs-target="#mi-carousel"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button 
+							type="button"
+							class=""
+							data-bs-target="#mi-carousel"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+<!------------galeria-------------->
+
+        <div class="row my-3">
+           <div class="col-12">
+            <p class="h3 text-center "> Galeria </p>
+            <hr>
+           </div>
+        </div>
+       
+        <div class="row mt-3 d-flex">
+            <div class="col-12 col-sm-6  col-md-4 col-lg-3 col opaci my-3">
+				<div class="card">
+					<img class="card-img-top" src="img/1.jpg" alt="">
+					<div class="card-body">
+						<h5 class="card-title">iPhone</h5>
+						<h6 class="card-subtitle text-muted mb-2">Subtitulo</h6>
+						<p class="card-text">Lorem ipsum dolor sit  </p>
+						<a href="#" class="btn btn-outline-primary">Boton</a>
+					</div>
+				</div>
+			</div>
+            <div class="col-12 col-sm-6  col-md-4 col-lg-3 col opaci  my-3">
+				<div class="card">
+					<img class="card-img-top" src="img/2.jpg" alt="">
+					<div class="card-body">
+						<h5 class="card-title">Mac</h5>
+						<h6 class="card-subtitle text-muted mb-2">Subtitulo</h6>
+						<p class="card-text">Lorem ipsum dolor sit  </p>
+						<a href="#" class="btn btn-outline-primary">Boton</a>
+					</div>
+				</div>
+			</div>
+            <div class="col-12 col-sm-6  col-md-4 col-lg-3 col opaci my-3">
+				<div class="card">
+					<img class="card-img-top" src="img/3.jpg" alt="">
+					<div class="card-body">
+						<h5 class="card-title">Canon</h5>
+						<h6 class="card-subtitle text-muted mb-2">Subtitulo</h6>
+						<p class="card-text">Lorem ipsum dolor sit  </p>
+						<a href="#" class="btn btn-outline-primary">Boton</a>
+					</div>
+				</div>
+			</div>
+            <div class="col-12 col-sm-6  col-md-4 col-lg-3 col opaci my-3">
+				<div class="card">
+					<img class="card-img-top" src="img/4.jpg" alt="">
+					<div class="card-body">
+						<h5 class="card-title">Apple Wach</h5>
+						<h6 class="card-subtitle text-muted mb-2">Subtitulo</h6>
+						<p class="card-text">Lorem ipsum dolor sit  </p>
+						<a href="#" class="btn btn-outline-primary">Boton</a>
+					</div>
+				</div>
+			</div>
+            <div class="col-12 col-sm-6  col-md-4 col-lg-3 col opaci my-3">
+				<div class="card">
+					<img class="card-img-top" src="img/5.jpg" alt="">
+					<div class="card-body">
+						<h5 class="card-title">Keyboard</h5>
+						<h6 class="card-subtitle text-muted mb-2">Subtitulo</h6>
+						<p class="card-text">Lorem ipsum dolor sit  </p>
+						<a href="#" class="btn btn-outline-primary">Boton</a>
+					</div>
+				</div>
+			</div>
+            <div class="col-12 col-sm-6  col-md-4 col-lg-3 col opaci my-3">
+				<div class="card">
+					<img class="card-img-top" src="img/6.jpg" alt="">
+					<div class="card-body">
+						<h5 class="card-title">iPad</h5>
+						<h6 class="card-subtitle text-muted mb-2">Subtitulo</h6>
+						<p class="card-text">Lorem ipsum dolor sit  </p>
+						<a href="#" class="btn btn-outline-primary">Boton</a>
+					</div>
+				</div>
+			</div>
+            <div class="col-12 col-sm-6  col-md-4 col-lg-3 col opaci my-3">
+				<div class="card">
+					<img class="card-img-top" src="img/7.jpg" alt="">
+					<div class="card-body">
+						<h5 class="card-title">Macbook</h5>
+						<h6 class="card-subtitle text-muted mb-2">Subtitulo</h6>
+						<p class="card-text">Lorem ipsum dolor sit  </p>
+						<a href="#" class="btn btn-outline-primary">Boton</a>
+					</div>
+				</div>
+			</div>
+            <div class="col-12 col-sm-6  col-md-4 col-lg-3 col opaci my-3">
+				<div class="card">
+					<img class="card-img-top" src="img/8.jpg" alt="">
+					<div class="card-body">
+						<h5 class="card-title">Cameras</h5>
+						<h6 class="card-subtitle text-muted mb-2">Subtitulo</h6>
+						<p class="card-text">Lorem ipsum dolor sit  </p>
+						<a href="#" class="btn btn-outline-primary">Boton</a>
+					</div>
+				</div>
+			</div>
+        </div>
+
+
+
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="row my-5 d-flex justify-content-between">
+            <div class="col-6">
+                <p class="h5" style="color: rgba(78, 78, 78, 0.973) ;" > JERARDO ROMERO</p>
+                <a class="btn btn-link" href="#">Acerca de</a>
+                <a class="btn btn-link" href="#">Contacto</a>
+
+            </div>
+            <div class="col-6 d-flex justify-content-start">
+                <a class="btn btn-link ms-auto" href="#" >Subir a pagina</a>
+
+            </div>
+        </div>
+    </div>
+</footer>    
+
+       
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>
